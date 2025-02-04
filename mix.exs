@@ -31,7 +31,7 @@ defmodule RealmOsintEx.MixProject do
   defp deps do
     [
       {:req, "~> 0.5.8"},
-      {:sweet_xml, "~> 0.7.5"}, 
+      {:sweet_xml, "~> 0.7.5"},
       {:ex_doc, "~> 0.35.1", only: :dev, runtime: false}
     ]
   end

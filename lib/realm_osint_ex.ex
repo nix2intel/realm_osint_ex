@@ -1,5 +1,6 @@
 defmodule RealmOsintEx do
   import SweetXml
+
   @moduledoc """
   RealmOsintEx is an OSINT tool built with Elixir for querying Microsoft's GetUserRealm endpoint using Req.
 
@@ -57,6 +58,7 @@ defmodule RealmOsintEx do
       "CloudInstanceIssuerUri" => xpath(doc, ~x"/RealmInfo/CloudInstanceIssuerUri/text()"s)
     }
   end
+
   @doc """
   Retrieves user realm information for a given domain using Req.
 
@@ -85,7 +87,7 @@ defmodule RealmOsintEx do
     - `{:error, reason}` if the HTTP request or JSON processing fails.
   """
   require Logger
-  
+
   def get_realm(domain, format \\ :xml) when is_binary(domain) do
     Req.new(
       method: :get,

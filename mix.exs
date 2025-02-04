@@ -38,7 +38,7 @@ defmodule RealmOsintEx.MixProject do
 
   defp package do
     [
-      name: "RealmOsintEx",
+      name: "realm_osint_ex",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["BSD-3-Clause"],
       links: %{

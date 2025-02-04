@@ -50,8 +50,7 @@ Add RealmOsintEx to your Elixir project by updating your `mix.exs` dependencies:
 ```elixir
 defp deps do
   [
-    {:req, "~> 0.3.0"},
-    {:jason, "~> 1.2"}
+    {:realm_osint_ex, "~> 0.1.0"}
   ]
 end
 ```

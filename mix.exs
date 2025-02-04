@@ -1,8 +1,8 @@
-defmodule LeakCheck.MixProject do
+defmodule RealmOsintEx.MixProject do
   use Mix.Project
 
   @version "0.1.0"
-  
+
   @source_url "https://github.com/nix2intel/realm_osint_ex"
 
   def project do
@@ -30,22 +30,22 @@ defmodule LeakCheck.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-  	{:req, "~> 0.5.8"},
-  	{:jason, "~> 1.4"},
-  	{:ex_doc, "~> 0.35.1",  only: :dev, runtime: false}
+      {:req, "~> 0.5.8"},
+      {:ex_doc, "~> 0.35.1", only: :dev, runtime: false}
     ]
   end
-  
+
   defp package do
     [
       name: "RealmOsintEx",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["BSD-3-Clause"],
       links: %{
-        "GitHub" => @source_url,
+        "GitHub" => @source_url
       }
     ]
   end
+
   defp docs do
     [
       main: "readme",
@@ -53,10 +53,10 @@ defmodule LeakCheck.MixProject do
       extras: ["README.md"]
     ]
   end
-defp description do
-"""
-RealmOsintEx is an Elixir library that simplifies OSINT investigations by querying Microsoft's GetUserRealm endpoint. It automatically constructs a standardized login and returns the domain's authentication configuration, providing a seamless way to ascertain how a domain handles authentication.
-"""
-end
 
+  defp description do
+    """
+    RealmOsintEx is an Elixir library that simplifies OSINT investigations by querying Microsoft's GetUserRealm endpoint. It automatically constructs a standardized login and returns the domain's authentication configuration, providing a seamless way to ascertain how a domain handles authentication.
+    """
+  end
 end

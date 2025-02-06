@@ -1,9 +1,9 @@
 defmodule RealmOsintEx.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.2.0"
 
-  @source_url "https://github.com/nix2intel/realm_osint_ex"
+  @source_url "https://github.com/osintowl/realm_osint_ex"
 
   def project do
     [
